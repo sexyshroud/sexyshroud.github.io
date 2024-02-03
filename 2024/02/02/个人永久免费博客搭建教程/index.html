@@ -14,7 +14,7 @@
 <meta property="og:description" content="大佬教程：https:&#x2F;&#x2F;lucyhuafang.blogspot.com&#x2F;2023&#x2F;11&#x2F;hexogithubvercel.html 第一部分：本地部署——把博客搭建在我的电脑，单机版博客。1.1、下载安装环境node.jshttps:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-02-02T06:43:15.000Z">
-<meta property="article:modified_time" content="2024-02-03T12:47:24.225Z">
+<meta property="article:modified_time" content="2024-02-03T12:55:23.717Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -114,19 +114,19 @@
 <p> git config –global user.name “你的GitHub用户名”<br> git config –global user.email “你注册github的邮箱”</p>
 <p>2.4、生成密匙命令<br>ssh-keygen -t rsa -C “你注册github的邮箱”<br>在本地电脑 C:\Users\fangxu chen中找到新生成的公匙文件id_rsa.pub，记事本格式打开。复制其中一串码（公匙）</p>
 <p>2.5、到github网站，点右上角图像，右边找到设置，左边点击SSH and GPG keys。新建一个-New SSH Key。<br>把刚才复制的乱码粘贴过来。<br>这一步的作用是让电脑与服务器连接起来。要服务器给我信的电脑授权。<br>在电脑上生成一个钥匙，把这个钥匙填到服务器，建立信任。</p>
-<p>2.6、验证是否连接成功<br>输入命令<br>ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;">&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;</a><br>会让你输入yes来确认连接<br>出现Hi sexyshroud! You’ve successfully authenticated, but GitHub does not provide shell access.就表示成功。</p>
+<p>2.6、验证是否连接成功<br>输入命令<br>ssh -T <a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;</a><br>会让你输入yes来确认连接<br>出现Hi sexyshroud! You’ve successfully authenticated, but GitHub does not provide shell access.就表示成功。</p>
 <p>2.7、根目录里打开 _config.yml文件，记事本格式打开。找到文件最后一行的 deploy<br>替换以下代码<br>deploy:</p>
 <p>type: git</p>
 <p>repo: <a target="_blank" rel="noopener" href="https://github.com/%E4%BD%A0%E7%9A%84github%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84github%E7%94%A8%E6%88%B7%E5%90%8D.github.io.git,main">https://github.com/你的github用户名/你的github用户名.github.io.git,main</a><br>第三部分：推送</p>
 <p>3.1、安装模块<br>npm install hexo-deployer-git –save</p>
-<p>3.2、清理缓存，重新生成静态文件，推送到github的命令：<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo de<br>（这条命令在每次本地修改后都要重新打开git bash推送一遍才算完成一次博客更新）<br>推送成功后，你的博客网站就能联网更新了。进入网站：你的GitHub用户名.github.io</p>
+<p>3.2、清理缓存，重新生成静态文件，推送到github的命令：<br><font color="red"> hexo clean &amp;&amp; hexo g &amp;&amp; hexo de </font><br>（这条命令在每次本地修改后都要重新打开git bash推送一遍才算完成一次博客更新）<br>推送成功后，你的博客网站就能联网更新了。进入网站：你的GitHub用户名.github.io</p>
 <p>第四部分：管理博客<br>4.1添加博客<br>hexo n  博客的名称<br>创建你的博客就行<br>再到F:\blog\sexyshroud\source_posts里找到这篇博客的文件夹，用记事本打开。编辑。<br>最后hexo clean &amp;&amp; hexo g &amp;&amp; hexo de推送。博客就联网更新了。</p>
 <p><a target="_blank" rel="noopener" href="https://sexyshroud.github.io/">https://sexyshroud.github.io/</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/02/02/%E4%B8%AA%E4%BA%BA%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" data-id="cls62rr9h000180u66re205n4" data-title="个人永久免费博客搭建教程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/02/02/%E4%B8%AA%E4%BA%BA%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" data-id="cls62uvtd0000ewu63kdvegah" data-title="个人永久免费博客搭建教程" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -186,10 +186,6 @@
       <ul>
         
           <li>
-            <a href="/2024/02/03/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
             <a href="/2024/02/03/%E4%BA%92%E8%81%94%E7%BD%91%E6%90%9E%E9%92%B1%E7%9A%84%E7%A7%98%E8%AF%80%E5%8F%AA%E6%9C%898%E4%B8%AA%E5%AD%97/">互联网搞钱的秘诀只有8个字</a>
           </li>
         
@@ -203,6 +199,10 @@
         
           <li>
             <a href="/2024/02/01/%E8%8B%B1%E8%AF%AD%E7%BD%91%E7%BB%9C%E5%B9%B3%E5%8F%B0%E8%AF%8D%E6%B1%87/">英语网络平台词汇</a>
+          </li>
+        
+          <li>
+            <a href="/2024/02/01/%E8%B7%A8%E5%A2%83%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E7%9A%84/">跨境可能需要的</a>
           </li>
         
       </ul>
